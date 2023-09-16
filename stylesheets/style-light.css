@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Zen+Maru+Gothic:wght@500&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "MaisonNeue-Bold", "Inter", "Zen Maru Gothic", Helvetica, Arial,
+    sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.centered {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+p {
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  text-align: left;
+}
