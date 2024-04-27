@@ -7,9 +7,22 @@
 
     <title>Huynh Duong</title>
 
-    <link rel="stylesheet" href="stylesheets/style.css" id="theme-style" />
+    <link rel="stylesheet" href="stylesheets/style-dark.css" id="theme-style" />
     <link rel="icon" href="public/panda.png" type="image/x-icon" />
-    <script src="script.js"></script>
+    <script>
+      const themeStyle = document.getElementById("theme-style");
+
+      const prefersDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      if (prefersDarkMode) {
+        themeStyle.href = "stylesheets/style-dark.css";
+      } else {
+        themeStyle.href = "stylesheets/style-light.css";
+      }
+
+    </script>
   </head>
 
   <body>
